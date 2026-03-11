@@ -1,22 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Todo List</title>
-    <link rel="stylesheet" href="style1.css">
-</head>
-<body>
-    <h1>Todo List</h1>
-    <p>Добро пожаловать в список дел</p>
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab 2 - CSS и JS</title>
 
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-    <input type="text" placeholder="Введите задачу">
-    <button>Добавить задачу в список</button>
+  <body>
+    <main class="app-container">
+      <header>
+        <h1>Управление задачами</h1>
+      </header>
 
-    <h2>Мои текущие задачи</h2>
- <ol>
-    <li>Написать первую лабораторную по HTML</li>
-    <li>Добавить ее в репозиторий на GitHub</li>
-</ol>
-</body>
-</html> 
+      <section id="input-area" class="input-group">
+        <input
+          type="text"
+          id="task-name"
+          placeholder="Наименование задачи..."
+        />
+
+        <button type="button" id="add-btn">Добавить</button>
+      </section>
+
+      <hr />
+
+      <section id="list-area">
+        <h2>Список текущих дел:</h2>
+
+        <div id="tasks-container">
+          <p class="task-item">1. Установка и настройка Visual Studio Code</p>
+
+          <p class="task-item">2. Инициализация репозитория Git</p>
+
+          <p class="task-item">3. Настройка расширения Live Server</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
